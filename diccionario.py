@@ -5,6 +5,7 @@ def main():
 		print("1 - Agregar un amigo")
 		print("2 - Consultar teléfono")
 		print("3 - Eliminar un amigo")
+		print("4 - mostrar agenda")
 		print("0 - Salir")
 
 		opcion = input("Elige una opción: ").strip()
@@ -35,6 +36,9 @@ def main():
 				print(f"{nombre} fue eliminado.")
 			else:
 				print("No se encontró ese nombre.")
+		elif opcion == "4":
+			print(agenda)
+
 
 		elif opcion == "0":
 			print("Saliendo. ¡Hasta luego!")
